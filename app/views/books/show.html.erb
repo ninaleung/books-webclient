@@ -1,0 +1,8 @@
+<h1>Book info:</h1>
+<h2>Title: <%= @book.title %></h2>
+<h3>Author: <%= @book.author %></h3>
+<h3>Publisher: <%= @book.publisher %></h3>
+<h3>Genre: <%= @book.genre %></h3>
+<h3>Year Published: &copy; <%= @book.year %></h3>
+<h4><%= link_to "Edit this book", "/books/#{@book.id}/edit" %></h4>
+<h4><%= link_to "Delete this book", "/books/#{@book.id}", method: :delete %></h4>

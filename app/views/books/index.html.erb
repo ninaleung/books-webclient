@@ -1,0 +1,11 @@
+<h1>Books!</h1>
+<%= link_to "Add a new book", "/books/new" %>
+<% @books.each do |book| %>
+  <h2>Title: <%= book.title %></h2>
+  <h3>Author: <%= book.author %></h3>
+  <h3>Publisher: <%= book.publisher %></h3>
+  <h3>Genre: <%= book.genre %></h3>
+  <h3>Year Published: &copy; <%= book.year %></h3>
+  <h3>&copy; <%= book.year_publisher %></h3>
+  <hr>
+<% end %>
